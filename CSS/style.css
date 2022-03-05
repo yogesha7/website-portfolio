@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: (--background-color);
+  --cursor: pointer;
+  --font-family: "Redressed", cursive;
+  --no-text-decoration: none;
+  --display: flex;
+}
+
+body {
+  background-color: var(--background-color);
+  line-height: 20px;
+  font-family: var(--font-family);
+}
+
+@media all and (max-width: 550px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+  }
+}
+
+nav {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  display: var(--display);
+}
+
+ul {
+  margin: 3% -300%;
+  display: flex;
+  list-style: none;
+  float: right;
+  text-decoration: var(--no-text-decoration);
+  float: right;
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+}
+ul li a {
+  text-decoration: none;
+}
+
+h1 {
+  color: red;
+}
+
+.main {
+  justify-content: center;
+  margin-left: 35%;
+}
+
+.profile-pic {
+  width: 300px;
+  float: left;
+  padding-right: 25px;
+  border-radius: 25%;
+}
+
+p {
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: white;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+h3 {
+  color: brown;
+  background-color: lightblue;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+
+
+.grid-text-color {
+  color: black;
+  padding: 10px;
+}
+
+.page-footer {
+  clear: both;
+  bottom: 0;
+}
+
+tbody {
+  padding: 10px;
+  margin: 10px;
+}
+
+.experience {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+button {
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: aqua;
+  opacity: 8px;
+}
+
+table {
+  border: solid black;
+  padding: 20px;
+}
+
+.soccer-image {
+  width: 600px;
+  height: auto;
+}
+
+.code-link {
+  font-size: 20px;
+  text-decoration: none;
+  border: 2px solid green;
+  border-radius: 25px;
+  padding: 4px;
+  background-color: cyan;
+}
+
+:hover .code-link {
+  cursor: pointer;
+  transition-duration: .5s;
+  background-color: beige;
+  transition-delay: 1s;
+  transition: ease-in;
+  width: 100px;
+
+}
+
+#about-picture {
+  width: 600px;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100%{
+    fill: #f76414;
+  }
+}
+
+.sun{
+  animation: color-change 4s infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front, .cloud-back {
+  animation: cloud-move 3s infinite alternate linear;
+}
+
+
+
