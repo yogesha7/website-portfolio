@@ -3,7 +3,6 @@
 }
 
 :root {
-  --background-color: (--background-color);
   --cursor: pointer;
   --font-family: "Redressed", cursive;
   --no-text-decoration: none;
@@ -11,7 +10,7 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-colors);
   line-height: 20px;
   font-family: var(--font-family);
 }
@@ -114,7 +113,7 @@ button {
 button:hover {
   cursor: pointer;
   background-color: aqua;
-  opacity: 8px;
+  opacity: 0.8;
 }
 
 table {
@@ -178,6 +177,3 @@ table {
 .cloud-front, .cloud-back {
   animation: cloud-move 3s infinite alternate linear;
 }
-
-
-

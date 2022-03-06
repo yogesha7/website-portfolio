@@ -10,10 +10,17 @@
           box-sizing: border-box;
 }
 
+:root {
+  --cursor: pointer;
+  --font-family: "Redressed", cursive;
+  --no-text-decoration: none;
+  --display: flex;
+}
+
 body {
-  background-color: (--background-color);
+  background-color: var(--background-colors);
   line-height: 20px;
-  font-family: "Redressed", cursive;
+  font-family: var(--font-family);
 }
 
 @media all and (max-width: 550px) {
@@ -29,9 +36,7 @@ nav {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: var(--display);
 }
 
 ul {
@@ -41,7 +46,8 @@ ul {
   display: flex;
   list-style: none;
   float: right;
-  text-decoration: none;
+  -webkit-text-decoration: var(--no-text-decoration);
+          text-decoration: var(--no-text-decoration);
   float: right;
 }
 ul li {
@@ -123,7 +129,7 @@ button {
 button:hover {
   cursor: pointer;
   background-color: aqua;
-  opacity: 8px;
+  opacity: 0.8;
 }
 
 table {
@@ -220,5 +226,3 @@ table {
   -webkit-animation: cloud-move 3s infinite alternate linear;
           animation: cloud-move 3s infinite alternate linear;
 }
-
-
